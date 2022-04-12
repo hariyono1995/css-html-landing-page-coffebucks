@@ -1,6 +1,8 @@
 .main-container {
-  width: 1280px;
+  width: 1440px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .announcements {
@@ -28,7 +30,7 @@ a {
 .right-left-section {
   display: flex;
   width: 100%;
-  max-height: 400px;
+  max-height: 60vh;
 }
 
 .text-section {
@@ -43,7 +45,6 @@ a {
 
 .text-section h1 {
   font-size: 2.7rem;
-  margin-bottom: 0rem;
 }
 
 .text-section p {
@@ -60,11 +61,12 @@ a {
   border-radius: 30px;
   margin-top: 10px;
   cursor: pointer;
+  transition: all 0.1s ease;
 }
 
 .text-section .cta:hover {
+  padding: 7px 20px;
   background-color: #dff7ef;
-  transition: all 0.2s ease;
 }
 
 .image-section {
@@ -73,6 +75,237 @@ a {
 
 .image-section img {
   width: 100%;
-  max-height: 400px;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.menu-section {
+  margin-top: 32px;
+  display: flex;
+  max-height: 60vh;
+  max-width: 100%;
+}
+
+.card-menu-left {
+  width: 50%;
+  margin-right: 16px;
+  color: white;
+  background-color: #1e3932;
+}
+
+.card-menu-left .card-img-menu img {
+  width: 100%;
+  max-height: 100%;
+}
+
+.card-menu-left .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  background-color: #1e3932;
+
+  /* max-height: 700px; */
+}
+
+.card-menu-left .card-body h1 {
+  margin: 0px;
+  font-size: 2.5rem;
+}
+
+.card-menu-left .card-body p {
+  margin-top: 2rem;
+  width: 70%;
+  text-align: center;
+  line-height: 1.5rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.card-menu-left .card-body .btn-menu-card {
+  margin-top: 2rem;
+  padding: 7px 17px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.card-menu-left .card-body .btn-menu-card:hover {
+  padding: 7px 20px;
+  background-color: #00754a;
+}
+/* right */
+
+.card-menu-right {
+  width: 50%;
+  margin-left: 16px;
+  color: white;
+}
+
+.card-menu-right .card-img-menu img {
+  width: 100%;
+  max-height: 100%;
+}
+
+.card-menu-right .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  background-color: #1e3932;
+  /* max-height: 700px; */
+}
+
+.card-menu-right .card-body h1 {
+  margin: 0px;
+  font-size: 2.5rem;
+}
+
+.card-menu-right .card-body p {
+  margin-top: 2rem;
+  width: 70%;
+  text-align: center;
+  line-height: 1.5rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.card-menu-right .card-body .btn-menu-card {
+  margin-top: 2rem;
+  padding: 7px 17px;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.card-menu-right .card-body .btn-menu-card:hover {
+  padding: 7px 20px;
+  background-color: #00754a;
+}
+
+/* vegetarian */
+.vegetarian {
+  margin-top: 32px;
+  max-height: 300px;
+}
+
+.vegetarian,
+.right-left-section-vegetarian {
+  display: flex;
+  width: 100%;
+  max-height: 50vh;
+}
+
+.vegetarian-text-section {
+  width: 50%;
+  margin: 0;
+  background-color: #1e3932;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.vegetarian-text-section h1 {
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+.vegetarian-text-section p {
+  width: 50%;
+  font-weight: 550;
+  text-align: center;
+  line-height: 1.75rem;
+}
+
+.right-left-section-vegetarian .vegetarian-text-section .cta-vegetarian {
+  background-color: transparent;
+  padding: 7px 16px;
+  border: 2px solid white;
+  border-radius: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.vegetarian-text-section .cta-vegetarian:hover {
+  padding: 7px 20px;
+  background-color: #2a4c40;
+}
+
+.vegetarian-image-section {
+  width: 50%;
+}
+
+.vegetarian-image-section img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+/* Order */
+.order {
+  margin-top: 32px;
+  max-height: 300px;
+}
+
+.order,
+.right-left-section-order {
+  display: flex;
+  width: 100%;
+  max-height: 50vh;
+}
+
+.order-text-section {
+  width: 50%;
+  margin: 0;
+  background-color: #d4e9e2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.order-text-section h1 {
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+.order-text-section p {
+  width: 50%;
+  font-weight: 550;
+  text-align: center;
+  line-height: 1.75rem;
+}
+
+.right-left-section-order .order-text-section .cta-order {
+  background-color: transparent;
+  padding: 7px 16px;
+  border: 2px solid black;
+  border-radius: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.order-text-section .cta-order:hover {
+  padding: 7px 20px;
+  background-color: #ceede3;
+}
+
+.order-image-section {
+  width: 50%;
+}
+
+.order-image-section img {
+  width: 100%;
+  max-height: 100%;
   object-fit: cover;
 }
