@@ -7,6 +7,7 @@
   background-color: #d4e9e2;
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .announcements span {
@@ -21,4 +22,57 @@
 
 a {
   color: #000;
+}
+
+.rewards,
+.right-left-section {
+  display: flex;
+  width: 100%;
+  max-height: 400px;
+}
+
+.text-section {
+  width: 50%;
+  margin: 0;
+  background-color: #d4e9e2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-section h1 {
+  font-size: 2.7rem;
+  margin-bottom: 0rem;
+}
+
+.text-section p {
+  width: 70%;
+  font-weight: 550;
+  text-align: center;
+  line-height: 1.75rem;
+}
+
+.text-section .cta {
+  background-color: transparent;
+  padding: 7px 16px;
+  border: 1px solid black;
+  border-radius: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.text-section .cta:hover {
+  background-color: #dff7ef;
+  transition: all 0.2s ease;
+}
+
+.image-section {
+  width: 50%;
+}
+
+.image-section img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
 }
