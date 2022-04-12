@@ -1,0 +1,24 @@
+.main-container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.announcements {
+  background-color: #d4e9e2;
+  display: flex;
+  justify-content: center;
+}
+
+.announcements span {
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
+  font-size: 19px;
+  font-weight: 500;
+  max-width: 60%;
+  text-align: center;
+  line-height: 1.75rem;
+}
+
+a {
+  color: #000;
+}
